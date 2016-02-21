@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Braintree PayPal Vault Sample App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19T-Py-TTY">
+                                <rect key="frame" x="0.0" y="20" width="375" height="41"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="eub-U1-s64"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PayPal T-Shirt 9.99 USD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nz4-Kn-wDP">
+                                <rect key="frame" x="20" y="83" width="335" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="FDp-V5-pBP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="take_paypal_tshirt.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bfT-XZ-1QK">
+                                <rect key="frame" x="85" y="125" width="211" height="206"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vi1-Ub-w7S">
+                                <rect key="frame" x="28" y="407" width="327" height="57"/>
+                                <color key="backgroundColor" red="0.41390700530000002" green="0.88714816750000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="VnV-pp-4Q9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Pay with PayPal">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="payWithPayPalTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lpn-fq-igP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="vi1-Ub-w7S" firstAttribute="trailing" secondItem="Nz4-Kn-wDP" secondAttribute="trailing" id="95g-Re-YFJ"/>
+                            <constraint firstItem="bfT-XZ-1QK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="69" id="AJr-1H-RhA"/>
+                            <constraint firstItem="Nz4-Kn-wDP" firstAttribute="top" secondItem="19T-Py-TTY" secondAttribute="bottom" constant="22" id="CHF-kX-e4s"/>
+                            <constraint firstItem="vi1-Ub-w7S" firstAttribute="top" secondItem="bfT-XZ-1QK" secondAttribute="bottom" constant="76" id="CJO-tK-0BH"/>
+                            <constraint firstItem="bfT-XZ-1QK" firstAttribute="top" secondItem="Nz4-Kn-wDP" secondAttribute="bottom" constant="8" symbolic="YES" id="Dbi-5w-gja"/>
+                            <constraint firstItem="19T-Py-TTY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Wyd-9r-aJ8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bfT-XZ-1QK" secondAttribute="trailing" constant="63" id="Wzm-xu-dDM"/>
+                            <constraint firstItem="vi1-Ub-w7S" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="Yec-Ij-Mwl"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vi1-Ub-w7S" secondAttribute="bottom" constant="203" id="d4I-w6-Fwk"/>
+                            <constraint firstAttribute="trailing" secondItem="19T-Py-TTY" secondAttribute="trailing" id="lTd-6O-Nq5"/>
+                            <constraint firstItem="19T-Py-TTY" firstAttribute="centerX" secondItem="Nz4-Kn-wDP" secondAttribute="centerX" id="oTL-Ne-taB"/>
+                            <constraint firstItem="Nz4-Kn-wDP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="t9U-jc-4y6"/>
+                            <constraint firstItem="19T-Py-TTY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tev-mT-XWO"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="ppButton" destination="vi1-Ub-w7S" id="Qpr-TC-3WW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.5" y="429.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="take_paypal_tshirt.jpg" width="350" height="350"/>
+    </resources>
+</document>
